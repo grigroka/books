@@ -38,7 +38,7 @@ echo "</tr>";
 foreach ($books as $book) {
     echo "<tr>";
     echo "<td>$book->bookId</td>";
-    echo "<td>$book->authorId</td>";
+    echo "<td>$book->author</td>";
     echo "<td>$book->title</td>";
     echo "<td>$book->year</td>";
     echo "<td>";

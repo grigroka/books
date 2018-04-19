@@ -3,7 +3,7 @@
 class Book
 {
     public $bookId;
-    public $authorId;
+    public $author;
     public $title;
     public $year;
 
@@ -26,17 +26,17 @@ class Book
     /**
      * @return mixed
      */
-    public function getAuthorId()
+    public function getAuthor()
     {
-        return $this->authorId;
+        return $this->author;
     }
 
     /**
-     * @param mixed $authorId
+     * @param mixed $author
      */
-    public function setAuthorId($authorId)
+    public function setAuthor($author)
     {
-        $this->authorId = $authorId;
+        $this->author = $author;
     }
 
     /**

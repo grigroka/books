@@ -42,7 +42,7 @@ echo "</tr>";
 
 echo "<tr>";
 echo "<td>Authors name</td>";
-echo "<td>{$book->authorId}</td>";
+echo "<td>{$book->author}</td>";
 echo "</tr>";
 
 echo "<tr>";

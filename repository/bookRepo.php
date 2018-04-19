@@ -6,8 +6,8 @@
  * Time: 6:22 PM
  */
 
-include_once($_SERVER['DOCUMENT_ROOT'] . "database.php");
-include_once($_SERVER['DOCUMENT_ROOT'] . "models/Book.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/database.php");
+include_once($_SERVER['DOCUMENT_ROOT'] . "/models/Book.php");
 
 class bookRepo
 {
@@ -28,7 +28,7 @@ class bookRepo
         while ($row = $stmt->fetch(PDO::FETCH_OBJ)) {
             $obj = new Book();
             $obj->setBookId($row->bookId);
-            $obj->setAuthorId($row->name);
+            $obj->setAuthor($row->name);
             $obj->setTitle($row->title);
             $obj->setYear($row->year);
             $books[] = $obj;
@@ -49,7 +49,7 @@ class bookRepo
         $book = new Book();
 
         $book->bookId = $row['bookId'];
-        $book->authorId = $row['name'];
+        $book->author = $row['name'];
         $book->title = $row['title'];
         $book->year = $row['year'];
 
